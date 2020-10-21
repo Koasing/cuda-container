@@ -1,5 +1,6 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:10.2-base-ubuntu18.04
+ARG PYTHON_NAME
+FROM ${IMAGE_NAME}:10.2-base-${PYTHON_NAME}
 
 LABEL maintainer "PETNOW Inc. <support@petnow.io>"
 
