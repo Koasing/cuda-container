@@ -1,6 +1,7 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:10.1-runtime-ubuntu18.04
-LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
+ARG PYTHON_NAME
+FROM ${IMAGE_NAME}:10.1-runtime-${PYTHON_NAME}
+LABEL maintainer "PETNOW Inc. <support@petnow.io>"
 
 ENV CUDNN_VERSION 7.6.5.32
 
