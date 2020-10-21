@@ -1,7 +1,7 @@
 ARG IMAGE_NAME
 FROM ${IMAGE_NAME}:10.2-base-ubuntu18.04
 
-LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
+LABEL maintainer "PETNOW Inc. <support@petnow.io>"
 
 ENV NCCL_VERSION 2.7.8
 
